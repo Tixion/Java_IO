@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class ReadWriteBytesInArray {
+public class BytesInArray {
     public static void writeBytesArray(OutputStream outputStream, int [] arr) throws IOException{
         try (DataOutputStream dataOutputStream = new DataOutputStream(outputStream)) {
             for (int elem: arr) {

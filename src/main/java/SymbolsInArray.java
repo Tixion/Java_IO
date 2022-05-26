@@ -1,11 +1,11 @@
 import java.io.*;
 //import java.util.Arrays;
 
-public class ReadWriteSymbolsInArray {
+public class SymbolsInArray {
     public static void writeArray(Writer writer, int [] arr) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(writer)) {
-            for (int j : arr) {
-                bufferedWriter.write(String.valueOf(j));
+            for (int i : arr) {
+                bufferedWriter.write(String.valueOf(i));
                 bufferedWriter.write(" ");
             }
         }
